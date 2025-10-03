@@ -1,40 +1,42 @@
 package com.example.eecs4443lab2;
-
-import androidx.annotation.DrawableRes;
-import androidx.annotation.Nullable;
-
 public class Item {
-    String name;
-    String email;
-    int image;
 
-    public Item(String name, String email, int image) {
-        this.name = name;
-        this.email = email;
-        this.image = image;
+    // name and email of each item
+    String title, description;
+
+    // Id of the image attached ot the item
+    int imageResId;
+
+    // Main Constructor for each item
+    public Item(String title, int imageResId, String description) {
+        this.title = title;
+        this.description = description;
+        this.imageResId = imageResId;
     }
 
-    public String getName() {
-        return name;
+
+    // Getters and Setters for each item's data
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public int getImage() {
-        return image;
+    public int getImageResId() {
+        return imageResId;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setImageResId(int imageResId) {
+        this.imageResId = imageResId;
     }
 
-    public String getEmail() {
-        return email;
+    public String getDescription() {
+        return description;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
