@@ -96,16 +96,5 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         return items.size();
     }
 
-    static class ItemViewHolder extends RecyclerView.ViewHolder {
-        final ImageView thumbIv;
-        final TextView titleTv;
-        final TextView descTv;
-
-        ItemViewHolder(@NonNull View itemView) {
-            super(itemView);
-            thumbIv = itemView.findViewById(R.id.item_thumb);
-            titleTv = itemView.findViewById(R.id.item_title);
-            descTv = itemView.findViewById(R.id.item_desc);
-        }
-    }
+    
 }
