@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">EECS4443Lab2</string>
-    <string name="name">Name</string>
-    <string name="email">email@email.com</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
 </resources>
