@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         List<Item> itemList = new ArrayList<>();
 
         // Populate with dummy data (15 hardcoded items as required by lab)
-        for (int i = 1; i <= 2; i++) {
+        for (int i = 1; i <= 15; i++) {
             itemList.add(new Item("Item " + i, R.drawable.image_placeholder, "Description for item " + i));
         }
 
