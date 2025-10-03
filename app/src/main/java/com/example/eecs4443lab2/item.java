@@ -1,37 +1,34 @@
 package com.example.eecs4443lab2;
 
-public class item {
-    String title;
-    int imageResId;
-    String description;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.Nullable;
 
-    public item(String title, int imageResId, String description) {
+public class Item {
+    @Nullable
+    private final String title;
+    @DrawableRes
+    private final int imageResId;
+    @Nullable
+    private final String description;
+
+    public Item(@Nullable String title, int imageResId, @Nullable String description) {
         this.title = title;
         this.imageResId = imageResId;
         this.description = description;
     }
 
+    @Nullable
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
+    @DrawableRes
     public int getImageResId() {
         return imageResId;
     }
 
-    public void setImageResId(int imageResId) {
-        this.imageResId = imageResId;
-    }
-
+    @Nullable
     public String getDescription() {
         return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 }
