@@ -4,31 +4,37 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 
 public class Item {
-    @Nullable
-    private final String title;
-    @DrawableRes
-    private final int imageResId;
-    @Nullable
-    private final String description;
+    String name;
+    String email;
+    int image;
 
-    public Item(@Nullable String title, int imageResId, @Nullable String description) {
-        this.title = title;
-        this.imageResId = imageResId;
-        this.description = description;
+    public Item(String name, String email, int image) {
+        this.name = name;
+        this.email = email;
+        this.image = image;
     }
 
-    @Nullable
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    @DrawableRes
-    public int getImageResId() {
-        return imageResId;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @Nullable
-    public String getDescription() {
-        return description;
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
