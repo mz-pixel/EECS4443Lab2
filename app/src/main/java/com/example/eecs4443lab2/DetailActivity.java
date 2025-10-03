@@ -15,5 +15,5 @@ import androidx.appcompat.app.AppCompatActivity;
  * - Handles null/missing data gracefully with sensible defaults
  */
 public class DetailActivity extends AppCompatActivity {
-    
+
 }
