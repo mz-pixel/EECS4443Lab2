@@ -1,4 +1,4 @@
-# EECS4443Lab1
+# EECS4443Lab2
 
 ## Group Members:
 - Stefewn Johnson
