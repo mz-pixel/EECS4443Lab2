@@ -10,6 +10,4 @@ public class item {
         this.imageResId = imageResId;
         this.description = description;
     }
-
-    
 }
