@@ -16,17 +16,17 @@
 
 - [x] Design item_view.xml with image, title, and description
 
-- [ ] Populate MainActivity.java with 15 hardcoded items (ArrayList of Item)
+- [x] Populate MainActivity.java with 15 hardcoded items (ArrayList of Item)
 
-- [ ] Set RecyclerView adapter in MainActivity.java with the list
+- [x] Set RecyclerView adapter in MainActivity.java with the list
 
 Navigation & Data Passing
 
-- [ ] Add onClickListener in MyAdapter for each item
+- [x] Add onClickListener in MyAdapter for each item
 
-- [ ] Create explicit Intent to launch DetailActivity
+- [x] Create explicit Intent to launch DetailActivity
 
-- [ ] Pass item data (title, imageResId, description) via Intent
+- [x] Pass item data (title, imageResId, description) via Intent
 
 - [ ] Retrieve extras in DetailActivity and display them
 
@@ -34,27 +34,27 @@ Detail Screen
 
 - [x] Create activity_detail.xml with title, large image, and description
 
-- [ ] Implement null/empty data handling in DetailActivity (placeholder text/image)
+- [x] Implement null/empty data handling in DetailActivity (placeholder text/image)
 
 UI & Styling
 
-- [ ] Apply padding, fonts, and colors to layouts
+- [x] Apply padding, fonts, and colors to layouts
 
 - [ ] Ensure portrait and landscape orientations are supported (consider ConstraintLayout)
 
 Quality & Error Handling
 
-- [ ] Add error handling for missing/invalid data (null title, missing image, etc.)
+- [x] Add error handling for missing/invalid data (null title, missing image, etc.)
 
 - [ ] Comment key code sections (MyAdapter, Intent passing, DetailActivity)
 
 Final Steps
 
-- [ ] Write README.md with group members, contributions, and limitations
+- [x] Write README.md with group members, contributions, and limitations
 
 - [ ] Test app in portrait and landscape
 
-- [ ] Verify project builds without compile/runtime errors
+- [x] Verify project builds without compile/runtime errors
 
 ## Group Contributions:
 Each member put in equal amount of effort
