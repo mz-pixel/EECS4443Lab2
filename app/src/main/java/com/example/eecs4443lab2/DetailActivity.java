@@ -35,7 +35,7 @@ public class DetailActivity extends AppCompatActivity {
         if (imageResId != -1) {
             image.setImageResource(imageResId);
         } else {
-            image.setImageResource(R.drawable.placeholder);
+            image.setImageResource(R.drawable.placeholder1);
         }
         if (itemDescription != null) {
             description.setText(itemDescription);

@@ -12,12 +12,18 @@ public class Item {
     public Item(String title, int imageResId, String description) {
         if (title != null && !title.trim().isEmpty()) {
             this.title = title;
+        } else {
+            this.title = "No Title";
         }
         if (imageResId > 0) {
             this.imageResId = imageResId;
+        } else {
+            this.imageResId = R.drawable.placeholder1;
         }
         if (description != null && !description.trim().isEmpty()) {
             this.description = description;
+        } else {
+            this.description = "No description found";
         }
     }
 
