@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         itemList.add(new Item(
                 "Pencils",
                 R.drawable.placeholder,
-                "why is there an image of a pencil here you ask? I dont know."
+                "why is there an image of a pencil here you ask? Well, first of all, there isn't, and secondly, I dont know."
         ));
 
         itemList.add(new Item(
