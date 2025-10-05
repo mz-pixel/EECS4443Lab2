@@ -28,7 +28,7 @@ Navigation & Data Passing
 
 - [x] Pass item data (title, imageResId, description) via Intent
 
-- [ ] Retrieve extras in DetailActivity and display them
+- [x] Retrieve extras in DetailActivity and display them
 
 Detail Screen
 
@@ -40,19 +40,19 @@ UI & Styling
 
 - [x] Apply padding, fonts, and colors to layouts
 
-- [ ] Ensure portrait and landscape orientations are supported (consider ConstraintLayout)
+- [x] Ensure portrait and landscape orientations are supported (consider ConstraintLayout)
 
 Quality & Error Handling
 
 - [x] Add error handling for missing/invalid data (null title, missing image, etc.)
 
-- [ ] Comment key code sections (MyAdapter, Intent passing, DetailActivity)
+- [x] Comment key code sections (MyAdapter, Intent passing, DetailActivity)
 
 Final Steps
 
 - [x] Write README.md with group members, contributions, and limitations
 
-- [ ] Test app in portrait and landscape
+- [x] Test app in portrait and landscape
 
 - [x] Verify project builds without compile/runtime errors
 
