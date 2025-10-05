@@ -33,6 +33,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         Item item = itemList.get(position);
         holder.title.setText(item.getTitle());
+
+        // code to limit the description to 50 characters if it is longer
+        // (mentioned in the lab report to have short description on list page)
         String desc = item.getDescription();
         if (desc.length() > 50) {
             desc = desc.substring(0, 50) + "...";
@@ -40,6 +43,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         holder.summary.setText(desc);
         holder.thumbnail.setImageResource(item.getImageResId());
 
+        // event listener for each item in the list, onClick it creates intent and
+        // passes necessary data to the detail activity and start the activity
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, DetailActivity.class);
             intent.putExtra("title", item.getTitle());
@@ -49,6 +54,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         });
     }
 
+    // returns list size, necessary function to implement
     @Override
     public int getItemCount() {
         return itemList.size();
