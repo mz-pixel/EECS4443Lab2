@@ -54,6 +54,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         return itemList.size();
     }
 
+    // view holder
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
         TextView title, summary;
         ImageView thumbnail;
