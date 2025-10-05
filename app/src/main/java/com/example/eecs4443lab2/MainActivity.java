@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         itemList = new ArrayList<>();
         populateItems();
 
-        // adapter for items
+        // created the adapter object and passes it to the recycler
         adapter = new ItemAdapter(this, itemList);
         recyclerView.setAdapter(adapter);
     }

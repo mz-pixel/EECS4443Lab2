@@ -14,14 +14,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
+    // stores context and the data list to display
     private Context context;
     private List<Item> itemList;
 
+
+    // constructor
     public ItemAdapter(Context context, List<Item> itemList) {
         this.context = context;
         this.itemList = itemList;
     }
 
+
+    // item view holder which holds reference to the child view
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -29,8 +34,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         return new ItemViewHolder(view);
     }
 
+    // binds data to corresponding positions
     @Override
-    public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
+    public void onBindViewHolder( ItemViewHolder holder, int position) {
         Item item = itemList.get(position);
         holder.title.setText(item.getTitle());
 
@@ -60,12 +66,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         return itemList.size();
     }
 
-    // view holder
+    // view holder which holds the references to the individual views, helps in recycler view
+    // so that you can avoid calling findViewById each time and just reuse what is stored
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
         TextView title, summary;
         ImageView thumbnail;
 
-        public ItemViewHolder(@NonNull View itemView) {
+        public ItemViewHolder( View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.item_title);
             summary = itemView.findViewById(R.id.item_summary);
