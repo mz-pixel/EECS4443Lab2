@@ -58,101 +58,107 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void populateItems() {
-        for (int i = 1; i <= 1500; i++) {
-            itemList.add(new Item(
-                    "Item " + i,
-                    R.drawable.placeholder,   // add placeholder.png in drawable
-                    "This is the description for Item " + i
-            ));
-        }
-//        itemList.add(new Item(
-//                "Banana",
-//                R.drawable.placeholder,
-//                "Just a Banana, nothing else."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Apple",
-//                R.drawable.placeholder,
-//                "Just an apple, nothing else."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Orange",
-//                R.drawable.placeholder,
-//                "Just an Orange, nothing else."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Pineapple",
-//                R.drawable.placeholder,
-//                "Just an Pineapple, nothing else."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Tomato",
-//                R.drawable.placeholder,
-//                "Just an tomato, nothing else."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Something",
-//                R.drawable.placeholder,
-//                "Out of ideas already."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Pencils",
-//                R.drawable.placeholder,
-//                "why is there an image of a pencil here you ask? I dont know."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Mountains",
-//                R.drawable.placeholder,
-//                "Mountains are cool."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Sky",
-//                R.drawable.placeholder,
-//                "Blue sky."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Clouds",
-//                R.drawable.placeholder,
-//                "This cloud is very cool (just imagine there is a cloud here and not a placeholder image)."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Grass",
-//                R.drawable.placeholder,
-//                "Please touch some grass..."
-//        ));
-//
-//        itemList.add(new Item(
-//                "River",
-//                R.drawable.placeholder,
-//                "river...."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Grapes",
-//                R.drawable.placeholder,
-//                "I guess we going back to fruits now."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Watermelon",
-//                R.drawable.placeholder,
-//                "best melon."
-//        ));
-//
-//        itemList.add(new Item(
-//                "Mango",
-//                R.drawable.placeholder,
-//                "Best fruit after lemons."
-//        ));
+//        for (int i = 1; i <= 1500; i++) {
+//            itemList.add(new Item(
+//                    "Item " + i,
+//                    R.drawable.placeholder,   // add placeholder.png in drawable
+//                    "This is the description for Item " + i
+//            ));
+//        }
+        itemList.add(new Item(
+                "Banana",
+                R.drawable.placeholder,
+                "Just a Banana, nothing else."
+        ));
+
+        itemList.add(new Item(
+                "Apple",
+                R.drawable.placeholder,
+                "Just an apple, nothing else."
+        ));
+
+        itemList.add(new Item(
+                "Orange",
+                R.drawable.placeholder,
+                "Just an Orange, nothing else."
+        ));
+
+        itemList.add(new Item(
+                "Pineapple",
+                R.drawable.placeholder,
+                "Just an Pineapple, nothing else."
+        ));
+
+        itemList.add(new Item(
+                "Tomato",
+                R.drawable.placeholder,
+                "Just an tomato, nothing else."
+        ));
+
+        itemList.add(new Item(
+                "Something",
+                R.drawable.placeholder,
+                "Out of ideas already."
+        ));
+
+        itemList.add(new Item(
+                "Pencils",
+                R.drawable.placeholder,
+                "why is there an image of a pencil here you ask? I dont know."
+        ));
+
+        itemList.add(new Item(
+                "Mountains",
+                R.drawable.placeholder,
+                "Mountains are cool."
+        ));
+
+        itemList.add(new Item(
+                "Sky",
+                R.drawable.placeholder,
+                "Blue sky."
+        ));
+
+        itemList.add(new Item(
+                "Clouds",
+                R.drawable.placeholder,
+                "This cloud is very cool (just imagine there is a cloud here and not a placeholder image)."
+        ));
+
+        itemList.add(new Item(
+                "Grass",
+                R.drawable.placeholder,
+                "Please touch some grass..."
+        ));
+
+        itemList.add(new Item(
+                "River",
+                R.drawable.placeholder,
+                "river...."
+        ));
+
+        itemList.add(new Item(
+                "Grapes",
+                R.drawable.placeholder,
+                "I guess we going back to fruits now."
+        ));
+
+        itemList.add(new Item(
+                "Watermelon",
+                R.drawable.placeholder,
+                "best melon."
+        ));
+
+        itemList.add(new Item(
+                "Mango",
+                R.drawable.placeholder,
+                "Best fruit after lemons."
+        ));
+
+        itemList.add(new Item(
+                "",
+                R.drawable.placeholder,
+                ""
+        ));
     }
 }
