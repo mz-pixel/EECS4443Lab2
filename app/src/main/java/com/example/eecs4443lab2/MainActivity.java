@@ -86,13 +86,13 @@ public class MainActivity extends AppCompatActivity {
         itemList.add(new Item(
                 "Pineapple",
                 R.drawable.placeholder,
-                "Just an Pineapple, nothing else."
+                "Just a Pineapple, nothing else."
         ));
 
         itemList.add(new Item(
                 "Tomato",
                 R.drawable.placeholder,
-                "Just an tomato, nothing else."
+                "Just a tomato, nothing else."
         ));
 
         itemList.add(new Item(
@@ -105,12 +105,6 @@ public class MainActivity extends AppCompatActivity {
                 "Pencils",
                 R.drawable.placeholder,
                 "why is there an image of a pencil here you ask? I dont know."
-        ));
-
-        itemList.add(new Item(
-                "Mountains",
-                R.drawable.placeholder,
-                "Mountains are cool."
         ));
 
         itemList.add(new Item(
@@ -144,21 +138,15 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         itemList.add(new Item(
-                "Watermelon",
-                R.drawable.placeholder,
-                "best melon."
-        ));
-
-        itemList.add(new Item(
                 "Mango",
                 R.drawable.placeholder,
                 "Best fruit after lemons."
         ));
 
         itemList.add(new Item(
-                "",
-                R.drawable.placeholder,
-                ""
+                R.drawable.placeholder
         ));
+
+        itemList.add(new Item());
     }
 }
