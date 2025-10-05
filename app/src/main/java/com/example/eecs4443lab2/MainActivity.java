@@ -50,9 +50,11 @@ public class MainActivity extends AppCompatActivity {
         DividerItemDecoration divider = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
         recyclerView.addItemDecoration(divider);
 
+        // arraylist for the items so it can be displayed in list by looping over them
         itemList = new ArrayList<>();
         populateItems();
 
+        // adapter for items
         adapter = new ItemAdapter(this, itemList);
         recyclerView.setAdapter(adapter);
     }
@@ -61,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
 //        for (int i = 1; i <= 1500; i++) {
 //            itemList.add(new Item(
 //                    "Item " + i,
-//                    R.drawable.placeholder,   // add placeholder.png in drawable
-//                    "This is the description for Item " + i
+//                    R.drawable.placeholder,
+//                    "testing item " + i
 //            ));
 //        }
         itemList.add(new Item(
@@ -92,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         itemList.add(new Item(
                 "Tomato",
                 R.drawable.placeholder,
-                "Just a tomato, nothing else."
+                "Testing long strings: Just a tomato, nothing else. Just a tomato, nothing else. Just a tomato, nothing else. Just a tomato, nothing else. Just a tomato, nothing else. Just a tomato, nothing else. Just a tomato, nothing else. Just a tomato, nothing else. Just a tomato, nothing else. Just a tomato, nothing else."
         ));
 
         itemList.add(new Item(

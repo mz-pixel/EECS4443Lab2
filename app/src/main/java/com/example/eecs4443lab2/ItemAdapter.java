@@ -33,7 +33,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         Item item = itemList.get(position);
         holder.title.setText(item.getTitle());
-        holder.summary.setText(item.getDescription());
+        String desc = item.getDescription();
+        if (desc.length() > 50) {
+            desc = desc.substring(0, 50) + "...";
+        }
+        holder.summary.setText(desc);
         holder.thumbnail.setImageResource(item.getImageResId());
 
         holder.itemView.setOnClickListener(v -> {

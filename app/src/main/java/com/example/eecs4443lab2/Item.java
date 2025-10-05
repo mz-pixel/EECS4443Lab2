@@ -3,9 +3,9 @@ package com.example.eecs4443lab2;
 public class Item {
 
 //    class variables
-    String title = "Did not find Title";
+    String title = "No Title";
     int imageResId = R.drawable.placeholder;
-    String description = "There was no description found";
+    String description = "No description found";
 
     // used android studio's generator to generate the constructor and get/set methods
 
@@ -13,27 +13,29 @@ public class Item {
         if (title != null && !title.trim().isEmpty()) {
             this.title = title;
         }
-        if (imageResId != 0) {
+        if (imageResId > 0) {
             this.imageResId = imageResId;
         }
         if (description != null && !description.trim().isEmpty()) {
             this.description = description;
         }
     }
+
+    // constructors below handle scenarios where certain params are missing.
     public Item(String title) {
-        this(title, 0, null); // only title
+        this(title, -1, null);
     }
 
     public Item(int imageResId) {
-        this(null, imageResId, null); // only image
+        this(null, imageResId, null);
     }
 
     public Item(String title, String description) {
-        this(title, 0, description); // title + desc
+        this(title, -1, description);
     }
 
     public Item() {
-        this(null,0,null);
+        this(null,-1,null);
     }
 
     public String getTitle() {
